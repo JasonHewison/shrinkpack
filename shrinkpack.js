@@ -63,6 +63,14 @@ module.exports = {
 
     console.log(log.styles.gray.close);
 
+    log.info('npm dedupe');
+
+    console.log(log.styles.gray.open);
+
+    shell.exec('npm dedupe');
+
+    console.log(log.styles.gray.close);
+
     log.info('npm shrinkwrap into', log.underline(graph));
 
     shell.exec('npm shrinkwrap', {
