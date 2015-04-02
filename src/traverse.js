@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(object, fn) {
 
   var is = require('is');

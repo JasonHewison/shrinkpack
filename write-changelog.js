@@ -1,3 +1,5 @@
+'use strict';
+
 var changelog = require('conventional-changelog');
 var fs = require('fs');
 var pkg = require('./package.json');

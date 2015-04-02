@@ -1,4 +1,5 @@
-var childProcess = require('child_process');
+'use strict';
+
 var fs = require('fs');
 var is = require('is');
 var path = require('path');
@@ -93,7 +94,6 @@ module.exports = {
         var name = chain[chain.length - 1];
         var version = value.version;
         var shortName = name + '@' + version;
-        var url = tarball.getRegistryUrl(name, version);
         var cached = tarball.getCachePath(name, version);
         var packed = tarball.getSavePath(name, version);
 
